@@ -1,13 +1,14 @@
+e = 2.71828
 
 def ln(x):
     n = 1000.0
     return n * ((x ** (1/n)) - 1)
 
-def mylog(a, b):
+def mylog(b, a = e):
     x = ln(b)/ln(a)
     return x
 
-print(mylog(2, 4096))
+print(round(mylog(4096, 2)))
 
 def myLog2(x, b):
     if x < b:

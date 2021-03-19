@@ -84,11 +84,11 @@ def ln(x):
     n = 1000.0
     return n * ((x ** (1/n)) - 1)
 
-def mylog(a, b):
+def mylog(b, a):
     x = ln(b)/ln(a)
     return x
 
-print(round(mylog(2, 4096)))
+print(round(mylog(4096, 2)))
 
 #実行結果
 12
